@@ -1,0 +1,76 @@
+.header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.logo{
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 8px;
+    transition: 0.5s all;
+    color: white;
+    background-color: rgb(29, 28, 28);
+}
+.search input{
+    width: 50em;
+    padding: 0.5em;
+    border: none;
+    outline: none;
+    color: black;
+    border-radius: 5px;
+}
+.close{
+    text-align: end;
+    position: sticky;
+    z-index: 999;
+    top: 10px;
+    
+}
+.close span{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: black;
+    cursor: pointer;
+}
+.searchresults{
+    position: absolute;
+    margin: 1em;
+    padding: 10px;
+    height: 500px;
+    left: 15%;
+    flex-wrap: wrap;
+    display: none;
+    overflow-y: auto;
+    z-index: 999;
+    border-radius: 10px;
+    background-color: rgba(16, 15, 15, 0.648);
+}
+.results,.noresults{
+    display: flex;
+    margin: 2em;
+    cursor: pointer;
+    width: 500px;
+    top: 0;
+    padding: 15px;
+    transition: 0.5s all;
+    z-index: 998;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(43, 41, 41);
+}
+.results:hover{
+    transform: scale(110%);
+    background: linear-gradient(to right,transparent,black,black);
+}
+
+.navactive{
+    color: black;
+    border-radius: 5px;
+    background: silver;
+}

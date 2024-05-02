@@ -1,0 +1,82 @@
+.viewmovie {
+    height: 80vh;
+    display: flex;
+    width: 90%;
+    margin: 2em 0 0 4em;
+    border-radius: 6px;
+    background-color: rgb(30, 28, 28);
+    position: relative;
+}
+
+.poster {
+   position: relative;
+   width: 35%;
+   height: 100%;
+}
+.poster img{
+   width: 100%;
+   height: 100%;
+}
+.divide{
+    height: 100%;
+    background: linear-gradient(to right,transparent ,rgb(30, 28, 28)70%);
+    padding-right:8.5em;
+    left: 25%;
+    position: absolute;
+}
+.info{
+    position: relative;
+    padding: 10px;
+    width: 60%;
+    left: 35px;
+    overflow: auto;
+    max-height: 90%;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.movieinfo{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    padding: 10px;
+    top: -15px;
+    
+    border-bottom: 1px solid silver;
+    background-color: rgb(30, 28, 28);
+    justify-content: space-between;
+}
+.overview{
+    color: white;
+    text-align: justify;
+    margin-top: 2em;
+}
+.casts,.categories{
+    display: flex;
+    flex-wrap: wrap;
+}
+#heading{
+    margin-top: 3em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid silver;
+}
+.casts span,.categories span{
+    margin-left: 25px;
+    margin-bottom: 1em;
+    color: white;
+    border: 1px solid silver;
+    padding: 3px;
+    border-radius: 5px;
+}
+.trailer{
+   text-align: center;
+}
+#movietitle{
+    max-width: 300px;
+    font-size: 30px;
+    word-wrap: break-word;
+}
+#movierating{
+    color: gold;
+}
+

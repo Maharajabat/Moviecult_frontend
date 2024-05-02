@@ -1,0 +1,77 @@
+.userprofile{
+    height: 90vh;
+    position: relative;
+    display: flex;
+    background-image: url(./Additional/images/loginbg.jpg);
+    background-size: 70em;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+.userform{
+    width: 400px;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: rgba(78, 74, 74, 0.726);
+    height: 350px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.userform input{
+    font-size: 20px;
+    padding: 15px;
+    width: 95%;
+    transition: all 0.5s;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: black;
+}
+.userform input:focus{
+    transform: translateY(10%)
+}
+.userform button{
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+      width: max-content;
+   background-color: black;
+}
+.userform label{
+    width: 100%;
+    font-size: 20px;
+    margin-top: 1em;
+    text-align: left;
+}
+#userhead{
+   font-size: 30px;
+   margin-bottom: 0.5em;
+}
+#success,#error{
+    margin-top: 1em;
+     background-color: black;
+     border-radius: 5px;
+     padding: 5px;
+}
+#success{
+    color: green;
+}
+#error{
+    color: red;
+}
+#logout{
+    background: black;
+    padding: 5px;
+    border: 2px solid silver;
+    font-size: 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}

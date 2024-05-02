@@ -1,0 +1,117 @@
+.categorize{
+    margin: 2em;
+}
+.movielist{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-radius: 5px;
+    background: linear-gradient(45deg,silver,transparent,silver,transparent);
+    justify-content: space-evenly;
+}
+.listmovie{
+    margin: 1em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.genre{
+    display: flex;
+    width: 15em;   
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+.genresbox,.selectedbox{
+    width:500px;
+    background: linear-gradient(rgba(58, 57, 57, 0.715),transparent);
+    padding: 30px;
+    gap: 20px;
+    border-radius: 10px;
+    position: relative;
+    max-height: 100px;
+    display: flex;
+    overflow: auto;
+    flex-wrap: wrap;
+    
+}
+.genresbox::-webkit-scrollbar-thumb:vertical{
+    border-radius: 5px;
+   background:rgba(74, 74, 74, 0.957)
+}
+#genre-title{
+    cursor: pointer;
+    background: linear-gradient(rgb(58, 56, 56),transparent);
+    padding:10px;
+    border-radius: 10px;
+}
+#genre-title:hover,#selected-title:hover + #del{
+    transition: 0.5s all;
+    transform: scale(1.20);
+    
+}
+#icon{
+    font-size: 20px;
+    cursor: pointer;
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+}
+#selected-title{
+    cursor: pointer;
+    background: linear-gradient(rgb(58, 56, 56),transparent);
+    padding:10px;
+    border-radius: 10px;
+    color: white;
+}
+
+#del{
+    cursor: pointer;
+}
+
+.cat{
+    display: flex;
+    height: 30px;
+    margin-top: 1em;
+    text-align: center;
+    gap: 5px;
+}
+#yourcat{
+    position: absolute;
+    top: 10px;
+    color: white;
+}
+.sort{
+    display: flex;
+    justify-content: space-around;
+}
+.noresult{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    font-size: 30px;
+}
+#filterbtn{
+    cursor: pointer;
+}
+.titlefilter{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0 2em 0;
+}
+.titlefilter span{
+    border: 1px solid silver;
+    padding: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.active{
+    box-shadow: 0 0 5px 2px silver;
+}
+.navactive{
+    color: black;
+    border-radius: 5px;
+    background: silver;
+}
