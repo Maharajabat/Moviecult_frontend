@@ -38,10 +38,9 @@
     font-size: 15px;
     padding: 5px;
     margin-top: 1em;
-    margin-bottom: 0.5em;
     border-radius: 5px;
-      width: max-content;
-   background-color: black;
+    width: max-content;
+    background-color: black;
 }
 .userform label{
     width: 100%;

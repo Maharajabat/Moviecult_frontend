@@ -65,3 +65,17 @@ img{
     width: 20px;
     cursor: pointer;
 }
+@keyframes rotate {
+    0%{
+        transform:rotate(0);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+#load{
+    margin-top: 1em;
+    font-size: 25px;
+    filter: drop-shadow(0 0 2px);
+    animation: rotate 2s linear infinite;
+}
